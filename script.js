@@ -103,3 +103,23 @@ let appendedIndex = prices.map((item , index)=>{
 });
 
 console.log(appendedIndex)
+
+// 11. Use filter() to keep only the even numbers: [1, 2, 3, 4, 5, 6].
+
+let even = [1, 2, 3, 4, 5, 6];
+
+let evenNumbers = even.filter((item)=>{
+return item %2 == 0;
+});
+
+console.log(evenNumbers)
+
+// 12. Use filter() to remove all negative numbers from an array: [-3, 4, -1, 7, -5].
+
+let rmNeg = [-3, 4, -1, 7, -5];
+
+let remNeg = rmNeg.filter((item)=>{
+    return item >= 0;
+})
+
+console.log(remNeg)
